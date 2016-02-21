@@ -1,0 +1,34 @@
+body{
+	padding: 0.5em 2.5em;
+}
+h2{
+	margin-top: 0;
+}
+.menu{
+	background-color: #E0DBDB;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+.right-side{
+  width: 50%;
+  margin-top: 1em;
+  float: right;
+  position: relative;
+}
+#info{
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+.adverts-table{
+	overflow-y: scroll;
+	height: 625px;
+}
+.adverts-table .btn{
+	margin-bottom: 10px;
+}
+form{
+	width: 45%;
+	position: absolute;
+	top: 4em;
+}
