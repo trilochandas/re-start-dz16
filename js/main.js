@@ -19,16 +19,6 @@ $( document ).ready(function() {
         });
     });
 
-    // $("a.showAdvert").on('click', function(event){
-    //   event.preventDefault();
-    //   var id = $(this).data('id');
-    //   $.ajax({
-    //     type: "GET",
-    //     url: 'ajax-request.php?id="'+id+'"',
-        
-    //   });
-    // });
-
     // add advert
     $("#advertForm").submit(function() {
 

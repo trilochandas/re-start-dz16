@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"brdr",
+				"border-radius"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
 				"border",
 				"border-bottom"
 			],
@@ -78,10 +86,6 @@
 			[
 				"fon",
 				"font-weight"
-			],
-			[
-				"min",
-				"min-width"
 			],
 			[
 				"c",
@@ -475,6 +479,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/product/product.tpl",
+			"settings":
+			{
+				"buffer_size": 33882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_product.scss",
+			"settings":
+			{
+				"buffer_size": 351,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_megafilter.scss",
+			"settings":
+			{
+				"buffer_size": 15762,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix.min.css",
+			"settings":
+			{
+				"buffer_size": 69045,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -630,32 +666,25 @@
 	},
 	"expanded_folders":
 	[
-		"/d/OpenServer/domains/105/catalog",
 		"/d/OpenServer/domains/prioritet",
 		"/d/OpenServer/domains/prioritet/catalog",
-		"/d/OpenServer/domains/prioritet/catalog/controller",
-		"/d/OpenServer/domains/prioritet/catalog/controller/product",
-		"/d/OpenServer/domains/prioritet/catalog/language",
-		"/d/OpenServer/domains/prioritet/catalog/language/russian",
-		"/d/OpenServer/domains/prioritet/catalog/language/russian/product",
 		"/d/OpenServer/domains/prioritet/catalog/view",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/image",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/image/category",
+		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/dev",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/module",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/product"
+		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template"
 	],
 	"file_history":
 	[
+		"/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_cart.scss",
+		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix.min.css",
+		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/fix.scss",
+		"/d/OpenServer/domains/aurora/catalog/view/theme/default/stylesheet/stylesheet.css",
+		"/d/OpenServer/domains/aurora/catalog/view/theme/default/template/module/viewed.tpl",
+		"/d/OpenServer/domains/aurora/catalog/view/theme/default/template/product/category.tpl",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/product/category.tpl",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_cart.scss",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix.min.css",
 		"/d/OpenServer/domains/prioritet/catalog/controller/product/category.php",
 		"/d/OpenServer/domains/prioritet/catalog/language/russian/product/category.php",
 		"/d/OpenServer/domains/prioritet/catalog/language/russian/russian.php",
@@ -686,15 +715,12 @@
 		"/d/OpenServer/domains/homealone-moo/catalog/view/theme/homealone/template/product/category.tpl",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/d/OpenServer/domains/homealone-moo/catalog/view/theme/homealone/stylesheet/stylesheet.css",
-		"/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_cart.scss",
-		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/fix.scss",
 		"/d/OpenServer/domains/nika-mebel/catalog/view/theme/default/template/module/coolfilter.tpl",
 		"/d/OpenServer/domains/nika-mebel/catalog/view/javascript/custom.js",
 		"/d/OpenServer/domains/nika-mebel/catalog/view/javascript/jquery/ionrange/js/ion-rangeSlider/ion.rangeSlider.js",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/module/mega_filter.tpl",
 		"/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_megafilter.scss",
 		"/d/OpenServer/domains/homealone-moo/catalog/view/theme/homealone/template/product/product.tpl",
-		"/d/OpenServer/domains/aurora/catalog/view/theme/default/stylesheet/stylesheet.css",
 		"/C/VagrantRoot/webroot/public_html/lesson16/Smarty/templates/oop.tpl",
 		"/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_megafilter.scss",
 		"/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/fix.scss",
@@ -778,9 +804,7 @@
 		"/d/OpenServer/domains/105/ftpsync.settings",
 		"/d/OpenServer/domains/105/catalog/view/theme/cosmos/image/cart_fix.png",
 		"/d/OpenServer/domains/105/catalog/view/theme/cosmos/stylesheet/stylesheet.css",
-		"/D/OpenServer/domains/auroramobile/catalog/view/theme/mobile/stylesheet/sass/fix.scss",
-		"/d/OpenServer/domains/Mathilda-test/catalog/view/theme/default/template/common/header.tpl",
-		"/d/OpenServer/domains/Mathilda-test/config.php"
+		"/D/OpenServer/domains/auroramobile/catalog/view/theme/mobile/stylesheet/sass/fix.scss"
 	],
 	"find":
 	{
@@ -926,6 +950,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"reset-btn",
+			"small",
+			".tpl",
+			"view",
+			"viewed",
+			"view",
 			"button_next_page",
 			"text_sku",
 			"slic",
@@ -1047,13 +1077,7 @@
 			"tab-description",
 			"description",
 			"nav-ta",
-			"center",
-			"tab-description",
-			"tab-content",
-			"text-align",
-			"tab-description",
-			"cart_modal",
-			"quantity"
+			"center"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1082,8 +1106,127 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/template/product/product.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21686,
+								21686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_product.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix/sass/import/_megafilter.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15706,
+								15706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8705.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/d/OpenServer/domains/prioritet/catalog/view/theme/prioritet/stylesheet/fix.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 69045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

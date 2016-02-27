@@ -61,7 +61,12 @@ class Ads{
     public function save() {
         global $db;
         $vars = get_object_vars($this);
-        $db->query('REPLACE INTO adverts(?#) VALUES(?a)',  array_keys($vars),  array_values($vars));
+        // var_dump($vars['id']);
+        if ($vars['id']) {
+            $db->query('UPDATE tbl SET ?a', $vars);
+        } else {
+            $db->query('INSERT INTO adverts(?#) VALUES(?a)',  array_keys($vars),  array_values($vars));
+        }
     }
 
     public static function deleteAdvert($id) {
@@ -159,6 +164,7 @@ class AdsStore{
     public function getUpdatedAdvert($id) {
         global $smarty;
         global $ads;
+        // global $db;
         // var_dump($this->ads);
         $row='';
         $adNeeded = $this->ads[$id];
@@ -168,7 +174,6 @@ class AdsStore{
     }
     public function displayForm() {
         global $smarty;
-        // var_dump($this->ads);
         $row='';
         foreach ($this->ads as $value) {
             $smarty->assign('ad',$value);
@@ -176,7 +181,6 @@ class AdsStore{
         }
         $smarty->assign('ads_rows',$row);
         return $row;
-        // return self::$instance;
     }
     public function display() {
         global $smarty;

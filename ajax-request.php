@@ -20,9 +20,9 @@ if (isset($_GET['formSubmit'])) {
 
     $ad=new Ads($_POST);
     // сохраняем объявление
+    // var_dump($ad);
     $ad->save();
     $id = $ad->getId();
-    // var_dump($a);
     $newInstance = AdsStore::instance();
     $response['id'] = $id;
     $response['row'] = $newInstance->getAllAdsFromDb()->getUpdatedAdvert($id);

@@ -57,6 +57,9 @@
 		},
 		{
 			"path": "d:\\OpenServer\\domains\\prioritet"
+		},
+		{
+			"path": "c:\\VagrantRoot\\webroot\\public_html\\lesson16"
 		}
 	]
 }
