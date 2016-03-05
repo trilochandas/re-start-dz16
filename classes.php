@@ -63,9 +63,10 @@ class Ads{
         $vars = get_object_vars($this);
         // var_dump($vars['id']);
         if ($vars['id']) {
-            $db->query('UPDATE tbl SET ?a', $vars);
+            $db->query('UPDATE adverts SET ?a', $vars);
         } else {
-            $db->query('INSERT INTO adverts(?#) VALUES(?a)',  array_keys($vars),  array_values($vars));
+        $id=$db->query('INSERT INTO adverts(?#) VALUES(?a)', array_keys($vars), array_values($vars));
+        $this->id = $id;
         }
     }
 
