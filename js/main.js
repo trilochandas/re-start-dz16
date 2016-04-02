@@ -29,8 +29,8 @@ $( document ).ready(function() {
              success: function(data, string)
              {
                 // clearing form
-                $('#advertForm input').attr('value', '');
-                $('#advertForm textarea').html('');
+                $('#advertForm input').val('');
+                $('#advertForm textarea').val('');
                 $('#advertForm input#send').attr('value', 'Send');
                 // update adverts table
                 var data = JSON.parse(data);
@@ -41,6 +41,8 @@ $( document ).ready(function() {
                 console.log(dataId);
                 console.log(dataRow);
                 console.log('td[data-id="'+dataId+'"]');
+                $(dataRow).insertAfter($('.adverts-table table tbody tr:last-child'));
+                
                 var table_row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').parent();
                 table_row.hide('slow', function(){
                   $(dataRow).insertAfter(table_row);
