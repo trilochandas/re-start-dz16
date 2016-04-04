@@ -43,11 +43,11 @@ $( document ).ready(function() {
                 console.log('td[data-id="'+dataId+'"]');
                 $(dataRow).insertAfter($('.adverts-table table tbody tr:last-child'));
                 
-                var table_row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').parent();
-                table_row.hide('slow', function(){
-                  $(dataRow).insertAfter(table_row);
-                  table_row.remove();
-                });
+                // var table_row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').parent();
+                // table_row.hide('slow', function(){
+                //   $(dataRow).insertAfter(table_row);
+                //   table_row.remove();
+                // });
              }
       });
 

@@ -61,8 +61,8 @@ class Ads{
     public function save() {
         global $db;
         $vars = get_object_vars($this);
-        // var_dump($vars['id']);
         if ($vars['id']) {
+            // var_dump($vars['id']);
             $db->query('UPDATE adverts SET ?a', $vars);
         } else {
         $id=$db->query('INSERT INTO adverts(?#) VALUES(?a)', array_keys($vars), array_values($vars));
