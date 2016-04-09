@@ -34,37 +34,40 @@ $( document ).ready(function() {
                 $('#advertForm input#send').attr('value', 'Send');
                 // update adverts table
                 var data = JSON.parse(data);
-                console.log(typeof(data));
                 console.log(data);
                 var dataId = data['id'];
                 var dataRow = data['row'];
                 console.log(dataId);
                 console.log(dataRow);
-                console.log('td[data-id="'+dataId+'"]');
-                $(dataRow).insertAfter($('.adverts-table table tbody tr:last-child'));
-                
-                // var table_row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').parent();
-                // table_row.hide('slow', function(){
-                //   $(dataRow).insertAfter(table_row);
-                //   table_row.remove();
-                // });
+
+                if ($('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').html() == 'undefined') {
+                  $(dataRow).insertAfter($('.adverts-table table tbody tr:last-child'));
+                } else {
+                  var table_row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').parent();
+                  table_row.hide('slow', function(){
+                    $(dataRow).insertAfter(table_row);
+                    table_row.remove();
+                  });
+                }
              }
       });
 
       return false; // avoid to execute the actual submit of the form.
     });
 
-    // $('a.showAdvert').on('click', function (event) {
-    //   event.preventDefault();
-    //   var id = $(this).attr("data-id");
-    //   console.log(id);
-    //   $.ajax({
-    //          type: "POST",
-    //          url: 'ajax-request.php?id='+id,
-    //          success: function(data, string)
-    //          {
-    //              alert(data); // show response from the php script.
-    //          }
-    //   });
-    // });
+    $('a.showAdvert').on('click', function (event) {
+      event.preventDefault();
+      var id = $(this).attr("data-id");
+      // console.log(id);
+      $.ajax({
+             type: "POST",
+             url: 'ajax-request.php?id='+id,
+             success: function(data, string)
+             {    
+                // var data = JSON.parse(data);
+                alert(data); // show response from the php script.
+                console.log(data);
+             }
+      });
+    });
 });

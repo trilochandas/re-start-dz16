@@ -63,10 +63,10 @@ class Ads{
         $vars = get_object_vars($this);
         if ($vars['id']) {
             // var_dump($vars['id']);
-            $db->query('UPDATE adverts SET ?a', $vars);
+            $db->query('UPDATE adverts SET ?a where id=?d', $vars, $vars['id']);
         } else {
-        $id=$db->query('INSERT INTO adverts(?#) VALUES(?a)', array_keys($vars), array_values($vars));
-        $this->id = $id;
+            $id=$db->query('INSERT INTO adverts(?#) VALUES(?a)', array_keys($vars), array_values($vars));
+            $this->id = $id;
         }
     }
 
@@ -165,8 +165,6 @@ class AdsStore{
     public function getUpdatedAdvert($id) {
         global $smarty;
         global $ads;
-        // global $db;
-        // var_dump($this->ads);
         $row='';
         $adNeeded = $this->ads[$id];
         $smarty->assign('ad',$adNeeded);
@@ -209,4 +207,9 @@ class AdsStore{
         $smarty->assign($key,$value);
     }
 
+    public function advertajax($id) {
+        global $ads;
+        $showing_advert = $this->ads[$id];
+        return $this->ads[$id];
+    }
 }
