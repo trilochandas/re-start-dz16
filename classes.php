@@ -153,7 +153,6 @@ class AdsStore{
     }
     public function prepareForOut() {
         global $smarty;
-        // var_dump($this->ads);
         $row='';
         foreach ($this->ads as $value) {
             $smarty->assign('ad',$value);
@@ -209,7 +208,14 @@ class AdsStore{
 
     public function advertajax($id) {
         global $ads;
-        $showing_advert = $this->ads[$id];
-        return $this->ads[$id];
+        global $smarty;
+        $form="";
+
+        $advert_for_form = $this->ads[$id];
+        foreach ( $advert_for_form->getObjectParam() as $key => $value)
+            $smarty->assign($key,$value);
+
+        $form = $smarty->fetch('form.tpl.html');
+        return $form;
     }
 }
