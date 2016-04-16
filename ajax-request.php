@@ -30,8 +30,8 @@ if (isset($_GET['formSubmit'])) {
 if ( isset($_GET['id']) ) { 
     $id = (int) $_GET['id'];
     $instance_for_advert = AdsStore::instance();
-    $return_advert_for_form = $instance_for_advert->getAllAdsFromDb()->getSelects()->advertajax($id); 
+    $return_advert_for_form = $instance_for_advert->getAllAdsFromDb()->advertajax($id); 
 
-    echo ( $return_advert_for_form );
+    return $return_advert_for_form;
 }
 

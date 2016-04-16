@@ -6,14 +6,16 @@ $( document ).ready(function() {
       $('table a.showAdvert').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr("data-id");
+        console.log(id);
         $.ajax({
-               type: "POST",
-               url: 'ajax-request.php?id='+id,
-               success: function(data, string)
-               {    
-                  // var data = JSON.parse(data);
-                  $('#advertForm').html(data);
-               }
+              type: "POST",
+              url: 'ajax-request.php?id='+id,
+              success: function(data, string)
+              {    
+                var data = JSON.parse(data);
+                console.log(data);
+                // $('#advertForm').html(data);
+              }
         });
       });
     }
@@ -55,13 +57,13 @@ $( document ).ready(function() {
                 $('#advertForm input#send').attr('value', 'Send');
                 // update adverts table
                 var data = JSON.parse(data);
-                console.log(data);
+                // console.log(data);
                 var dataId = data['id'];
                 var dataRow = data['row'];
-                console.log(dataId);
-                console.log(dataRow);
+                // console.log(dataId);
+                // console.log(dataRow);
                 var row = $('.adverts-table table tbody').find('td[data-id="'+dataId+'"]').html()
-                console.log(row);
+                // console.log(row);
                 if ( typeof(row) == "undefined" ) {
                   $(dataRow).insertAfter($('.adverts-table table tbody tr:last-child'));
                 } else {

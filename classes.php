@@ -207,15 +207,19 @@ class AdsStore{
     }
 
     public function advertajax($id) {
+        // global $ads;
+        // global $smarty;
+        // $form="";
+
+        // $advert_for_form = $this->ads[$id];
+        // foreach ( $advert_for_form->getObjectParam() as $key => $value)
+        //     $smarty->assign($key,$value);
+
+        // $form = $smarty->fetch('form.tpl.html');
+        // return $form;
+
         global $ads;
-        global $smarty;
-        $form="";
-
-        $advert_for_form = $this->ads[$id];
-        foreach ( $advert_for_form->getObjectParam() as $key => $value)
-            $smarty->assign($key,$value);
-
-        $form = $smarty->fetch('form.tpl.html');
-        return $form;
+        $showing_advert = $this->ads[$id];
+        return json_encode($this->ads[$id]);
     }
 }
